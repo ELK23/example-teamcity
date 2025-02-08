@@ -12,7 +12,7 @@ public class WelcomerTest {
     	public void testHunterReply() {
         Welcomer welcomer = new Welcomer();
         String reply = welcomer.getHunterReply();
-        assertTrue(reply.contains("hunter"), "Reply should contain the word 'hunter'");
+        assertTrue(welcomer.getHunterReply(), containsString("The hunter has arrived!"));
     	}
 	@Test
 	public void welcomerSaysWelcome() {
